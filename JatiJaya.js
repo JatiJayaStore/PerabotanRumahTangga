@@ -1,13 +1,31 @@
-const API_URL = 'https://sheetdb.io/api/v1/84vr5ataax542';
+const API_URL = 'https://sheetdb.io/api/v1/84vr5ataax542'; // GANTI DENGAN LINK SHEETDB ANDA
 let products = [];
+let filterCache = 'Semua'; // Untuk mengingat filter kategori terakhir
 
-async function fetchData() {
+async function checkAndUpdate() {
     try {
         const res = await fetch(API_URL);
-        products = await res.json();
-        renderProducts(products);
-        populateCategories(products);
-    } catch (e) { alert("Gagal memuat data, cek koneksi internet atau API URL"); }
+        const newData = await res.json();
+
+        // Cek pintar: Apakah ada perubahan data?
+        // Jika tidak ada perubahan, kita TIDAK merender ulang (agar layar pelanggan tidak loncat ke atas)
+        if (JSON.stringify(products) !== JSON.stringify(newData)) {
+            products = newData;
+            
+            // Terapkan filter yang sedang dipilih sebelumnya
+            if(filterCache === 'Semua') {
+                renderProducts(products);
+            } else {
+                renderProducts(products.filter(p => p.kategori === filterCache));
+            }
+            populateCategories(products);
+            console.log("Data toko berhasil diperbarui!");
+        } else {
+            console.log("Tidak ada perubahan harga/barang.");
+        }
+    } catch (e) { 
+        console.log("Gagal ambil data dari Google Sheets (cek internet)."); 
+    }
 }
 
 function renderProducts(data) {
@@ -43,15 +61,17 @@ document.getElementById('searchInput').addEventListener('input', (e) => {
 });
 
 function populateCategories(data) {
-    const cats = ['Semua', ...new Set(data.map(p => p.kategori).filter(Boolean))];
     const cont = document.getElementById('categoryFilters');
+    cont.innerHTML = ''; // PERBAIKAN: Hapus tombol lama agar tidak numpuk
+    const cats = ['Semua', ...new Set(data.map(p => p.kategori).filter(Boolean))];
     cats.forEach(c => {
         const btn = document.createElement('button');
-        btn.className = 'filter-btn' + (c==='Semua'?' active':'');
+        btn.className = 'filter-btn' + (c===filterCache ? ' active' : '');
         btn.innerText = c;
         btn.onclick = () => {
             document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
+            filterCache = c; // Simpan filter yang dipilih
             if(c==='Semua') renderProducts(products);
             else renderProducts(products.filter(p => p.kategori === c));
         }
@@ -88,5 +108,8 @@ function openModal(item) {
 document.querySelector('.close-btn').onclick = () => document.getElementById('productModal').classList.add('hidden');
 window.onclick = (e) => { if(e.target == document.getElementById('productModal')) e.target.classList.add('hidden'); }
 
-// Jalankan
-fetchData();
+// JALANKAN WEBSITE
+checkAndUpdate(); // Ambil data pertama kali
+// AUTO REFRESH: 300.000 milidetik = 5 menit.
+// (Jika ingin 10 menit, ganti 300000 menjadi 600000)
+setInterval(checkAndUpdate, 300000);
