@@ -88,3 +88,45 @@ footer { text-align: center; padding: 20px; background: #fff; margin-top: 20px; 
     .product-grid { grid-template-columns: repeat(4, 1fr); gap: 30px; padding: 30px 40px; }
     .modal-content { max-width: 900px; }
 }
+
+/* --- PERBAIKAN KHUSUS UNTUK LAYAR HP --- */
+@media (max-width: 767px) {
+    /* 1. Hapus flex-grow nama produk agar harga langsung berada di bawahnya */
+    .card h4 {
+        flex-grow: 0 !important; 
+        min-height: auto !important; 
+        margin-bottom: 8px; 
+    }
+    
+    /* 2. Perkecil tulisan harga agar tidak terlalu besar */
+    .price-tag {
+        font-size: 1rem; 
+        padding: 6px 12px;
+    }
+
+    /* 3. Tombol Filter diganti menjadi bisa di-geser (scroll) ke samping */
+    .filter-buttons { 
+        flex-wrap: nowrap !important; 
+        overflow-x: auto !important; 
+        justify-content: flex-start !important; 
+        gap: 6px; 
+        padding-bottom: 5px;
+        -webkit-overflow-scrolling: touch; /* Agar scroll mulus di iPhone */
+    }
+    .filter-btn { 
+        font-size: 0.8rem !important; 
+        padding: 6px 14px; 
+        white-space: nowrap !important; /* Mencegah teks filter turun ke bawah */
+    }
+    
+    /* 4. Pindahkan tombol WA ke pojok kanan bawah dan perkecil */
+    .wa-float { 
+        left: auto !important; 
+        right: 15px !important; 
+        transform: none !important; 
+        padding: 12px 18px !important; 
+        font-size: 0.9rem !important; 
+        border-radius: 30px !important;
+        bottom: 15px !important;
+    }
+        }
