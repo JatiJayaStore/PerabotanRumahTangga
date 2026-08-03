@@ -51,7 +51,7 @@ function renderProducts(data) {
         card.innerHTML = `
             <img src="${item.foto}" alt="${item.nama}" onerror="this.src='https://via.placeholder.com/200x200?text=No+Image'">
             <h4>${item.nama}</h4>
-            <div class="price-tag">HARGA: Rp ${formatRupiah(item.harga)}</div>
+            <div class="price-tag">Rp ${formatRupiah(item.harga)}</div>
             ${badge}
         `;
         card.onclick = () => openModal(item);
