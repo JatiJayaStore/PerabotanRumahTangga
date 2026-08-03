@@ -1,11 +1,9 @@
-const API_URL = 'https://sheetdb.io/api/v1/84vr5ataax542'; // LINK SHEETDB ANDA
+const API_URL = 'https://sheetdb.io/api/v1/84vr5ataax542';
 let products = [];
 let filterCache = 'Semua';
 
-// --- FUNGSI BARU: Mengubah angka jadi format Rupiah (Rp 1.000) ---
 function formatRupiah(angka) {
     if (!angka) return '0';
-    // Ubah jadi number, lalu format dengan pemisah titik ribuan
     return new Intl.NumberFormat('id-ID').format(Number(angka));
 }
 
@@ -39,8 +37,7 @@ function renderProducts(data) {
         const card = document.createElement('div');
         card.className = 'card';
         let badge = '';
-        
-        // --- PERBAIKAN BAGIAN BADGE HARGA NAIK/TURUN ---
+//---naik turun harga--
         if(item.harga_sebelumnya && item.tanggal_perubahan) {
             const selisih = Number(item.harga) - Number(item.harga_sebelumnya);
             if(selisih > 0) {

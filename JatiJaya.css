@@ -1,11 +1,57 @@
 * { box-sizing: border-box; font-family: 'Segoe UI', sans-serif; margin:0; padding:0; }
 body { background: #eef2f6; padding-bottom: 100px; }
 
-/* HEADER */
-header { background: #fff; padding: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-header h1 { color: #0b4f6c; font-weight: 700; font-size: 1.6rem; }
-header .address, header .hours { font-size: 0.9rem; color: #333; margin-top: 3px; }
-header .tagline { color: #555; font-size: 0.8rem; margin-top: 5px; }
+/* --- HEADER BARU (STICKY DI ATAS) --- */
+#sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    color: #0b4f6c;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-align: center;
+    padding: 15px 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 9999; /* Paling atas agar tidak tertutup gambar/ikan */
+    letter-spacing: 1px;
+}
+
+/* Beri jarak di body agar konten tidak tertutup header */
+body { 
+    background: #eef2f6; 
+    padding-bottom: 100px; 
+    padding-top: 65px; /* Tambahan ini agar konten pertama tidak tertutup header */
+}
+
+/* --- BANNER GAMBAR --- */
+.banner-container {
+    width: 100%;
+    background: #fff;
+}
+.banner-container img {
+    width: 100%;
+    height: auto; /* Gambar tidak dipaksa tinggi, mengikuti aslinya */
+    display: block;
+    object-fit: contain; /* Tidak ada yang terpotong */
+}
+
+/* --- INFO TOKO DI BAWAH GAMBAR --- */
+.info-banner {
+    background: #ffffff;
+    text-align: center;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.info-banner p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* --- BAGIAN SEARCH FILTER DIBAWAH INI TETAP SAMA --- */
+.search-filter { ... } /* (Biarkan bagian CSS ini tetap seperti sebelumnya) */
 
 /* SEARCH & FILTER */
 .search-filter { padding: 15px; background: #f8f9fa; position: sticky; top: 0; z-index: 10; }
