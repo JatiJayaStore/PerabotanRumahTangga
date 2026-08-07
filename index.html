@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko Jati Jaya</title>
-    <link rel="stylesheet" href="JatiJaya.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Jati Jaya</title>
+  <link rel="stylesheet" href="JatiJaya.css">
 </head>
 <body>
-<!-- HEADER -->
-<div id="sticky-header">TOKO PERABOTAN JATI JAYA</div>
-<div class="banner-container">
-    <img src="banner.jpg" alt="Banner Toko Jati Jaya">
-</div>
+  <header id="sticky-header">TOKO PERABOTAN JATI JAYA</header>
 
-    <!-- SEARCH & KATEGORI -->
-    <div class="search-filter">
-        <input type="text" id="searchInput" placeholder="Cari barang...">
-        <div id="categoryFilters" class="filter-buttons"></div>
+  <div class="banner-container">
+    <img src="banner.jpg" alt="Banner" onerror="this.style.display='none'">
+  </div>
+
+  <div class="search-filter">
+    <input type="text" id="searchInput" placeholder="Cari produk...">
+    <div id="categoryFilters" class="filter-buttons"></div>
+  </div>
+
+  <h2 class="section-title">Katalog Produk</h2>
+  <div id="productGrid" class="product-grid"></div>
+
+  <!-- Modal Detail -->
+  <div id="productModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modalImage" src="" alt="Produk">
+      <h3 id="modalTitle"></h3>
+      <p id="modalPrice" class="price-large"></p>
+      <a id="modalChatBtn" class="chat-btn" href="#" target="_blank">💬 Tanya via WA</a>
+      <div id="relatedProducts" class="related-grid"></div>
     </div>
+  </div>
 
-    <!-- KATALOG PRODUK (GRID) -->
-    <h2 style="margin: 20px 15px;">Katalog Produk</h2>
-    <div id="productGrid" class="product-grid"></div>
+  <a href="https://wa.me/6281212664277" class="wa-float" target="_blank">💬 Chat WA</a>
+  <footer><p>Call Center: +62 81212 6642 77</p></footer>
 
-    <!-- MODAL DETAIL PRODUK -->
-    <div id="productModal" class="modal hidden">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <img id="modalImage" src="" alt="Produk">
-            <h3 id="modalTitle"></h3>
-            <p id="modalPrice" class="price-large"></p>
-            <div id="relatedProducts" class="related-grid"></div>
-        </div>
-    </div>
-
-    <!-- FOOTER & WHATSAPP -->
-    <footer>
-        <a href="https://wa.me/6281212664277" class="wa-float" target="_blank">💬 Chat WA</a>
-        <p>Call Center: +62 81212 6642 77</p>
-    </footer>
-
-    <script src="JatiJaya.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="JatiJaya.js"></script>
 </body>
 </html>

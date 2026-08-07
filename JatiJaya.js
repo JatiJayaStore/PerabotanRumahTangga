@@ -1,121 +1,141 @@
-const API_URL = 'https://sheetdb.io/api/v1/84vr5ataax542';
+// Konfigurasi Supabase
+const SUPABASE_URL = 'https://fmfsdqexilhswoqlawes.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_-EVqHClMsBfPyI_1ZjqUQw_e8cpcags';
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const WA_NUMBER = '6281212664277';
 let products = [];
-let filterCache = 'Semua';
+let currentFilter = 'Semua';
 
-function formatRupiah(angka) {
-    if (!angka) return '0';
-    return new Intl.NumberFormat('id-ID').format(Number(angka));
+function formatHarga(value) {
+  if (value === null || value === undefined || value === '') return 'Hubungi CS';
+  if (typeof value === 'string' && value.includes('-')) {
+    const [min, max] = value.split('-').map(Number);
+    if (!isNaN(min) && !isNaN(max)) {
+      return `Rp ${min.toLocaleString('id-ID')} - ${max.toLocaleString('id-ID')}`;
+    }
+    return 'Hubungi CS';
+  }
+  const num = Number(value);
+  if (isNaN(num)) return 'Hubungi CS';
+  if (num === 0) return 'Gratis';
+  return `Rp ${num.toLocaleString('id-ID')}`;
 }
 
-async function checkAndUpdate() {
-    try {
-        const res = await fetch(API_URL);
-        const newData = await res.json();
+// Fungsi gambar: langsung pakai URL jika ada, fallback ke placeholder
+function getImageUrl(url) {
+  if (url && typeof url === 'string' && url.trim().length > 0) {
+    return url;
+  }
+  return 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300"%3E%3Crect width="300" height="300" fill="%23f3f4f6"/%3E%3Ctext x="150" y="150" font-family="sans-serif" font-size="18" fill="%239ca3af" text-anchor="middle" dy=".3em"%3ENo Image%3C/text%3E%3C/svg%3E';
+}
 
-        if (JSON.stringify(products) !== JSON.stringify(newData)) {
-            products = newData;
-            
-            if(filterCache === 'Semua') {
-                renderProducts(products);
-            } else {
-                renderProducts(products.filter(p => p.kategori === filterCache));
-            }
-            populateCategories(products);
-            console.log("Data toko berhasil diperbarui!");
-        } else {
-            console.log("Tidak ada perubahan harga/barang.");
-        }
-    } catch (e) { 
-        console.log("Gagal ambil data dari Google Sheets (cek internet)."); 
-    }
+async function loadProducts() {
+  const grid = document.getElementById('productGrid');
+  grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;">Memuat...</p>';
+  const { data, error } = await supabase.from('ProdukKatalog').select('*');
+  if (error) {
+    grid.innerHTML = `<p style="color:red;">Gagal: ${error.message}</p>`;
+    return;
+  }
+  if (!data || data.length === 0) {
+    grid.innerHTML = '<p>Tidak ada produk.</p>';
+    return;
+  }
+  products = data;
+  renderProducts(products);
+  populateCategories(products);
 }
 
 function renderProducts(data) {
-    const grid = document.getElementById('productGrid');
-    grid.innerHTML = '';
-    data.forEach(item => {
-        const card = document.createElement('div');
-        card.className = 'card';
-        let badge = '';
-//---naik turun harga--
-        if(item.harga_sebelumnya && item.tanggal_perubahan) {
-            const selisih = Number(item.harga) - Number(item.harga_sebelumnya);
-            if(selisih > 0) {
-                badge = `<div class="badge badge-naik">⬆ Naik Rp ${formatRupiah(selisih)} (${item.tanggal_perubahan})</div>`;
-            } else if (selisih < 0) {
-                badge = `<div class="badge badge-turun">⬇ Turun Rp ${formatRupiah(Math.abs(selisih))} (${item.tanggal_perubahan})</div>`;
-            }
-        }
+  const grid = document.getElementById('productGrid');
+  grid.innerHTML = '';
+  data.forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    const nama = item.nama || 'Tanpa Nama';
+    const harga = item.harga;
+    const imgSrc = getImageUrl(item.image_url); // <-- kolom image_url
 
-        // --- PERBAIKAN TAMPILAN HARGA DI KARTU PRODUK ---
-        card.innerHTML = `
-            <img src="${item.foto}" alt="${item.nama}" onerror="this.src='https://via.placeholder.com/200x200?text=No+Image'">
-            <h4>${item.nama}</h4>
-            <div class="price-tag">Rp ${formatRupiah(item.harga)}</div>
-            ${badge}
-        `;
-        card.onclick = () => openModal(item);
-        grid.appendChild(card);
-    });
+    card.innerHTML = `
+      <img src="${imgSrc}" alt="${nama}" loading="lazy" 
+           onerror="this.onerror=null;this.src='${getImageUrl()}';">
+      <h4>${nama}</h4>
+      <div class="price-tag">${formatHarga(harga)}</div>
+    `;
+    card.addEventListener('click', () => openModal(item));
+    grid.appendChild(card);
+  });
 }
-
-// Search & Kategori
-document.getElementById('searchInput').addEventListener('input', (e) => {
-    const val = e.target.value.toLowerCase();
-    const filtered = products.filter(p => p.nama.toLowerCase().includes(val));
-    renderProducts(filtered);
-});
 
 function populateCategories(data) {
-    const cont = document.getElementById('categoryFilters');
-    cont.innerHTML = '';
-    const cats = ['Semua', ...new Set(data.map(p => p.kategori).filter(Boolean))];
-    cats.forEach(c => {
-        const btn = document.createElement('button');
-        btn.className = 'filter-btn' + (c===filterCache ? ' active' : '');
-        btn.innerText = c;
-        btn.onclick = () => {
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            filterCache = c;
-            if(c==='Semua') renderProducts(products);
-            else renderProducts(products.filter(p => p.kategori === c));
-        }
-        cont.appendChild(btn);
+  const container = document.getElementById('categoryFilters');
+  container.innerHTML = '';
+  const cats = ['Semua', ...new Set(data.map(p => p.kategori).filter(Boolean))];
+  cats.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn' + (cat === currentFilter ? ' active' : '');
+    btn.textContent = cat;
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = cat;
+      applyFilterAndSearch();
     });
+    container.appendChild(btn);
+  });
 }
 
-// Modal Detail & Saran
+function applyFilterAndSearch() {
+  const keyword = document.getElementById('searchInput').value.toLowerCase().trim();
+  let filtered = products;
+  if (currentFilter !== 'Semua') filtered = filtered.filter(p => p.kategori === currentFilter);
+  if (keyword) filtered = filtered.filter(p => p.nama && p.nama.toLowerCase().includes(keyword));
+  renderProducts(filtered);
+}
+document.getElementById('searchInput').addEventListener('input', applyFilterAndSearch);
+
 function openModal(item) {
-    const m = document.getElementById('productModal');
-    m.classList.remove('hidden');
-    document.getElementById('modalImage').src = item.foto;
-    document.getElementById('modalTitle').innerText = item.nama;
-    
-    // --- PERBAIKAN HARGA DI DALAM POP UP DETAIL ---
-    document.getElementById('modalPrice').innerText = 'Rp ' + formatRupiah(item.harga);
+  document.getElementById('modalImage').src = getImageUrl(item.image_url);
+  document.getElementById('modalImage').onerror = function() { this.src = getImageUrl(); };
+  document.getElementById('modalTitle').textContent = item.nama || 'Tanpa Nama';
+  document.getElementById('modalPrice').textContent = formatHarga(item.harga);
+  const message = `Halo, saya tertarik produk "${item.nama}"`;
+  document.getElementById('modalChatBtn').href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
+  document.getElementById('productModal').classList.remove('hidden');
 
-    const keywords = item.nama.split(' ');
-    const related = products.filter(p => 
-        p.nama !== item.nama && keywords.some(k => p.nama.toLowerCase().includes(k.toLowerCase()))
-    ).slice(0, 4);
-
-    const rCont = document.getElementById('relatedProducts');
-    rCont.innerHTML = '<p style="grid-column: span 2;">Rekomendasi Barang Mirip:</p>';
+  // Rekomendasi
+  const keywords = (item.nama || '').split(' ').filter(k => k.length > 1);
+  const related = products
+    .filter(p => p.id !== item.id && keywords.some(k => p.nama?.includes(k)))
+    .slice(0, 4);
+  const container = document.getElementById('relatedProducts');
+  container.innerHTML = '<p style="grid-column:1/-1;font-weight:bold;">🔍 Produk Serupa</p>';
+  if (related.length === 0) {
+    container.innerHTML += '<p style="grid-column:1/-1;color:#999;">Tidak ada.</p>';
+  } else {
     related.forEach(p => {
-        const rCard = document.createElement('div');
-        rCard.className = 'related-item';
-        // --- PERBAIKAN HARGA DI SARAN BARANG ---
-        rCard.innerHTML = `<img src="${p.foto}" onerror="this.src='https://via.placeholder.com/100x100?text=No+Image'"><p>${p.nama}</p><small>Rp ${formatRupiah(p.harga)}</small>`;
-        rCard.onclick = () => { m.classList.add('hidden'); openModal(p); };
-        rCont.appendChild(rCard);
+      const div = document.createElement('div');
+      div.className = 'related-item';
+      div.innerHTML = `
+        <img src="${getImageUrl(p.image_url)}" onerror="this.src='${getImageUrl()}';" loading="lazy">
+        <p>${p.nama}</p>
+        <span class="rec-price">${formatHarga(p.harga)}</span>`;
+      div.addEventListener('click', () => {
+        document.getElementById('productModal').classList.add('hidden');
+        openModal(p);
+      });
+      container.appendChild(div);
     });
+  }
 }
 
-// Close Modal
-document.querySelector('.close-btn').onclick = () => document.getElementById('productModal').classList.add('hidden');
-window.onclick = (e) => { if(e.target == document.getElementById('productModal')) e.target.classList.add('hidden'); }
+document.querySelector('.close-btn').addEventListener('click', () => {
+  document.getElementById('productModal').classList.add('hidden');
+});
+window.addEventListener('click', (e) => {
+  if (e.target === document.getElementById('productModal')) {
+    document.getElementById('productModal').classList.add('hidden');
+  }
+});
 
-// JALANKAN WEBSITE
-checkAndUpdate();
-setInterval(checkAndUpdate, 300000);
+loadProducts();
