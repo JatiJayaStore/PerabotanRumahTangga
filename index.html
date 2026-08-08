@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toko Jati Jaya</title>
-  <link rel="stylesheet" href="JatiJaya.css">
+  <link rel="stylesheet" href="Json.css">
 </head>
 <body>
   <header id="sticky-header">TOKO PERABOTAN JATI JAYA</header>
@@ -21,22 +21,29 @@
   <h2 class="section-title">Katalog Produk</h2>
   <div id="productGrid" class="product-grid"></div>
 
-  <!-- Modal Detail -->
+  <!-- Modal Detail Baru (Tampilan Glide) -->
   <div id="productModal" class="modal hidden">
     <div class="modal-content">
       <span class="close-btn">&times;</span>
       <img id="modalImage" src="" alt="Produk">
-      <h3 id="modalTitle"></h3>
-      <p id="modalPrice" class="price-large"></p>
-      <a id="modalChatBtn" class="chat-btn" href="#" target="_blank">💬 Tanya via WA</a>
-      <div id="relatedProducts" class="related-grid"></div>
+      
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <div class="modal-price-wrapper">
+          <span class="modal-label">HARGA</span>
+          <p id="modalPrice" class="price-large"></p>
+        </div>
+        <a id="modalChatBtn" class="chat-btn" href="#" target="_blank">💬 Tanya via WhatsApp</a>
+        
+        <!-- Bagian rekomendasi produk serupa -->
+        <div id="relatedProducts" class="related-grid"></div>
+      </div>
     </div>
   </div>
 
   <a href="https://wa.me/6281212664277" class="wa-float" target="_blank">💬 Chat WA</a>
   <footer><p>Call Center: +62 81212 6642 77</p></footer>
 
-  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
-  <script src="JatiJaya.js"></script>
+  <script src="Json.js"></script>
 </body>
 </html>

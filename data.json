@@ -1,0 +1,758 @@
+[
+  {
+    "nama": "Payung lipat uv",
+    "kategori": "rumah tangga",
+    "harga": 22000,
+    "image_url": "https://i.ibb.co.com/r1Xs0kQ/Payung-Lipat-UV-Warna.jpg"
+  },
+  {
+    "nama": "Payung lipat motiv beruang",
+    "kategori": "rumah tangga",
+    "harga": 20000,
+    "image_url": "https://i.ibb.co.com/rRVmMTrb/Payung-Lipat-Motif-Beruang.png"
+  },
+  {
+    "nama": "Sikat Kamar mandi",
+    "kategori": "rumah tangga",
+    "harga": 7000,
+    "image_url": "https://i.ibb.co.com/YFfKJxWV/Sikat-Gagang.png"
+  },
+  {
+    "nama": "Magic PVA Mop (pel sponge)",
+    "kategori": "rumah tangga",
+    "harga": 40000,
+    "image_url": "https://i.ibb.co.com/JRn8sgBb/Magic-PBA-Mop.png"
+  },
+  {
+    "nama": "Kompor Omicko 1 tungku",
+    "kategori": "Cooking",
+    "harga": 85000,
+    "image_url": "https://i.ibb.co.com/tPxkrHhy/Omicko-1-tungkul.png"
+  },
+  {
+    "nama": "Kompor Omicko 2 Tungku",
+    "kategori": "Cooking",
+    "harga": 160000,
+    "image_url": "https://i.ibb.co.com/B2y9mq7k/Omicko-2-Tungku.png"
+  },
+  {
+    "nama": "Kompor GSF 1 tungku",
+    "kategori": "Cooking",
+    "harga": 90000,
+    "image_url": "https://i.ibb.co.com/1tbjQxy5/GSF-1-tungku.png"
+  },
+  {
+    "nama": "Dispenser Sanex",
+    "kategori": "rumah tangga",
+    "harga": 115000,
+    "image_url": "https://i.ibb.co.com/N6d7WrRQ/Dispenser-Sanex.png"
+  },
+  {
+    "nama": "Sapu lantai",
+    "kategori": "rumah tangga",
+    "harga": "15000-30000",
+    "image_url": ""
+  },
+  {
+    "nama": "Panci susu hitam",
+    "kategori": "Cooking",
+    "harga": 30000,
+    "image_url": "https://i.ibb.co.com/p8QpD1R/panci-susu-hitam.png"
+  },
+  {
+    "nama": "Panci susu warna",
+    "kategori": "Cooking",
+    "harga": 30000,
+    "image_url": "https://i.ibb.co.com/zHmZ2sQs/panci-susu-warna.png"
+  },
+  {
+    "nama": "One set cutting pengupas",
+    "kategori": "Cooking",
+    "harga": 75000,
+    "image_url": "https://i.ibb.co.com/tjNVsgD/One-set-cutting-pengupas.png"
+  },
+  {
+    "nama": "Setrika Hyperlite",
+    "kategori": "elektronik",
+    "harga": 80000,
+    "image_url": "https://i.ibb.co.com/5xf8TMD2/Setrika-Hyperlite.png"
+  },
+  {
+    "nama": "Chopper gelas",
+    "kategori": "Cooking",
+    "harga": 50000,
+    "image_url": "https://i.ibb.co.com/SDwZ4c56/Copper-Portable.png"
+  },
+  {
+    "nama": "Mixer omicko",
+    "kategori": "Cooking",
+    "harga": 125000,
+    "image_url": "https://i.ibb.co.com/VYtJ7wqt/mixer-omicko.png"
+  },
+  {
+    "nama": "Super hand mixer",
+    "kategori": "Cooking",
+    "harga": 180000,
+    "image_url": "https://i.ibb.co.com/bgfP4F7p/Super-hand-mixer.png"
+  },
+  {
+    "nama": "Setrika Miyako",
+    "kategori": "elektronik",
+    "harga": 115000,
+    "image_url": "https://i.ibb.co.com/zTN4fsBS/Setrika-Miyako.png"
+  },
+  {
+    "nama": "Setrika cosmos jet black",
+    "kategori": "elektronik",
+    "harga": 115000,
+    "image_url": "https://i.ibb.co.com/dJmJLm2m/Setrika-cosmos-jet-black.png"
+  },
+  {
+    "nama": "Antena Digital Intra INT-119/Indoor/Outdoor",
+    "kategori": "elektronik",
+    "harga": 110000,
+    "image_url": ""
+  },
+  {
+    "nama": "Mini Speaker Music",
+    "kategori": "elektronik",
+    "harga": 60000,
+    "image_url": ""
+  },
+  {
+    "nama": "Mitsuyama Senter Genggam MS-1239",
+    "kategori": "elektronik",
+    "harga": 18000,
+    "image_url": ""
+  },
+  {
+    "nama": "Mitsuyama Senter LED & Lamp Emergency SM-1220",
+    "kategori": "elektronik",
+    "harga": 110000,
+    "image_url": ""
+  },
+  {
+    "nama": "Rolinson Senter Tangan RL-192",
+    "kategori": "elektronik",
+    "harga": 9000,
+    "image_url": ""
+  },
+  {
+    "nama": "Mitsuyama Emergency (15 Watt)",
+    "kategori": "elektronik",
+    "harga": 35000,
+    "image_url": ""
+  },
+  {
+    "nama": "HI-COOK Gas Portable",
+    "kategori": "Cooking",
+    "harga": 20000,
+    "image_url": ""
+  },
+  {
+    "nama": "Hannochs Nova (12Watt)",
+    "kategori": "elektronik",
+    "harga": 25000,
+    "image_url": ""
+  },
+  {
+    "nama": "Hannochs Nova (45 Watt)",
+    "kategori": "elektronik",
+    "harga": 75000,
+    "image_url": ""
+  },
+  {
+    "nama": "Hannochs Fortuner (45 Watt)",
+    "kategori": "elektronik",
+    "harga": 75000,
+    "image_url": ""
+  },
+  {
+    "nama": "Cosmos CRJ-1001 N (0.6 liter)",
+    "kategori": "Cooking",
+    "harga": 225000,
+    "image_url": ""
+  },
+  {
+    "nama": "Miyako MCM-606 A",
+    "kategori": "Cooking",
+    "harga": 220000,
+    "image_url": ""
+  },
+  {
+    "nama": "Miyako PSG-607 (0.6 liter)",
+    "kategori": "Cooking",
+    "harga": 185000,
+    "image_url": ""
+  },
+  {
+    "nama": "Sharp KS-B18MG",
+    "kategori": "Cooking",
+    "harga": 275000,
+    "image_url": ""
+  },
+  {
+    "nama": "Cosmos CRJ-1803",
+    "kategori": "Cooking",
+    "harga": 235000,
+    "image_url": ""
+  },
+  {
+    "nama": "Miyako MCM-721 LST",
+    "kategori": "Cooking",
+    "harga": 375000,
+    "image_url": ""
+  },
+  {
+    "nama": "Miyako MCM-610",
+    "kategori": "Cooking",
+    "harga": 220000,
+    "image_url": ""
+  },
+  {
+    "nama": "Miyako MCG-751 SBC (3 liter)",
+    "kategori": "Cooking",
+    "harga": 450000,
+    "image_url": ""
+  },
+  {
+    "nama": "Cosmos CRJ-5508 BC",
+    "kategori": "Cooking",
+    "harga": 375000,
+    "image_url": ""
+  },
+  {
+    "nama": "Yong Ma SMC 5061 (1.0 liter)",
+    "kategori": "Cooking",
+    "harga": 625000,
+    "image_url": ""
+  },
+  {
+    "nama": "Yong Ma SMJ-4013 (8.2 liter)",
+    "kategori": "Cooking",
+    "harga": 625000,
+    "image_url": ""
+  },
+  {
+    "nama": "Panasonic SR-CEZ18",
+    "kategori": "Cooking",
+    "harga": 585000,
+    "image_url": ""
+  },
+  {
+    "nama": "Lampu Philips Tornado Helix",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/KxWtnTGc/Philips-Tornado-Helix-55-Watt.png"
+  },
+  {
+    "nama": "Lampu Philips RadiantLine LED",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/d03jcfFt/Philips-Radiant-Line-LED-40-Watt.png"
+  },
+  {
+    "nama": "Philips Blender HR2115",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/5ggJdTCj/Philips-Blender-HR2115.png"
+  },
+  {
+    "nama": "Philips Blender Seri 5000",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/TDp0zZ3x/Philips-Blender-5000-Series.png"
+  },
+  {
+    "nama": "Philips Blender 3000 Series",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/twz6b9dJ/Philips-Blender-3000-Series.png"
+  },
+  {
+    "nama": "Blender Cosmos (CB-281P)",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/whLJ7yq8/Blender-Cosmos-CB-281-P.png"
+  },
+  {
+    "nama": "Blender Miyako (BL-102 PL)",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/kVpndw90/Blender-Miyako-BL-102-PL.png"
+  },
+  {
+    "nama": "Termos Elephant Plastics",
+    "kategori": "Business furniture",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/chy8gjfD/Termos-Elephant-Plastics.png"
+  },
+  {
+    "nama": "Termos Lion Star Vacuum Flask Solaris SN-8",
+    "kategori": "Business furniture",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/tM5PLZ6s/Termos-Lion-Star-Vacuum-Flask-Solaris-SN-8.png"
+  },
+  {
+    "nama": "Termos Nasi / Termos Es (Rice Bucket)",
+    "kategori": "Business furniture",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/r2gmn7zv/Termos-Nasi-Termos-Es-Rice-Bucket.png"
+  },
+  {
+    "nama": "Lion Star Arizona Drink Jar",
+    "kategori": "Business furniture",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/4wf2PtH4/Lion-Star-Arizona-Drink-Jar.png"
+  },
+  {
+    "nama": "Lion Star Nice Day Rice Bucket",
+    "kategori": "Business furniture",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/tTKGHSYF/Lion-Star-Nice-Day-Rice-Bucket.png"
+  },
+  {
+    "nama": "Lion Star Basic Home Pandan Rice",
+    "kategori": "Business furniture",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/wZQp6JRg/Lion-Star-Basic-Home-Pandan-Rice.png"
+  },
+  {
+    "nama": "Termos Elephant",
+    "kategori": "Business furniture",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/7NQW4sD8/Termos-Elephant.png"
+  },
+  {
+    "nama": "Philips Hand Mixer 3000 Series",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/TBkVtw7J/Philips-Hand-Mixer-3000-Series.png"
+  },
+  {
+    "nama": "Maspion Hand Mixer MT-1192",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/60KbDQmR/Maspion-Hand-Mixer-MT-1192.png"
+  },
+  {
+    "nama": "Miyako Hand Mixer HM-620",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/RG6LWXfK/Miyako-Hand-Mixer-HM-620.png"
+  },
+  {
+    "nama": "Hand mixer Cosmos CM-1279",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/LhXW7LwK/Hand-mixer-Cosmos-CM-1279.png"
+  },
+  {
+    "nama": "Philips Daily Collection Juicer HR1811",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/bj7kL5vy/Philips-Daily-Collection-Juicer-HR1811.png"
+  },
+  {
+    "nama": "Miyako Juicer Extractor JE-607",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/jkymLjrV/Miyako-Juicer-Extractor-JE-607.png"
+  },
+  {
+    "nama": "Maspion Steamer Pancaguna",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/Kjsb3H1M/Maspion-Steamer-Pancaguna.png"
+  },
+  {
+    "nama": "Pemanggang Roti Pensonic PTI-929",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/2YRvYnwy/Pemanggang-Roti-Pensonic-PTI-929.png"
+  },
+  {
+    "nama": "Sharp Sandwich Toaster KZS-70L(W)",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/LdwLhvPv/Sharp-Sandwich-Toaster-KZS-70-L-W.png"
+  },
+  {
+    "nama": "Lampu Surya SQL L4301N",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/4ZLbTnfG/Lampu-Surya-SQL-L4301-N.png"
+  },
+  {
+    "nama": "Senter LED Mitsuyama MS-1220",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/pv4GVKfJ/Senter-LED-Mitsuyama-MS-1220.png"
+  },
+  {
+    "nama": "Intelligent Electric Garlic Machine",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/4ZcPcmch/Intelligent-Electric-Garlic-Machine.png"
+  },
+  {
+    "nama": "Handheld Fan T-10",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/zhxfcyz3/Handheld-Fan-T-10.png"
+  },
+  {
+    "nama": "Antena TV Digital Intra INT-119",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/5gnJhwkz/Antena-TV-Digital-Intra-INT-119.png"
+  },
+  {
+    "nama": "Senter LED mini Rolinson RL-192",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/ccJHrjFK/Senter-LED-mini-Rolinson-RL-192.png"
+  },
+  {
+    "nama": "Lampu Senter Tangan Mitsuyama MS-1239",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/fz3qR2Sr/Lampu-Senter-Tangan-Mitsuyama-MS-1239.png"
+  },
+  {
+    "nama": "Lampu Surya SQL L2207",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/yFQ5wV7h/Lampu-Surya-SQL-L2207.png"
+  },
+  {
+    "nama": "Speaker Bluetooth Mini Portable Motif Retak LED",
+    "kategori": "elektronik",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/HL5wbfXm/Speaker-Bluetooth-Mini-Portable-Motif-Retak-LED.png"
+  },
+  {
+    "nama": "Hand Pat Good Eater (Model M-796)",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/20wRS4z2/Hand-Pat-Good-Eater-Model-M-796.png"
+  },
+  {
+    "nama": "Hi-Cook Fuel Cartridge Classic",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/HLwPXc5Y/Hi-Cook-Fuel-Cartridge-Classic.png"
+  },
+  {
+    "nama": "Stella Matic Refill",
+    "kategori": "rumah tangga",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/k23wQYT1/Stella-Matic-Refill.png"
+  },
+  {
+    "nama": "BALI 6 Piece Knife Set",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/9HsbSPzx/BALI-6-Piece-Knife-Set.png"
+  },
+  {
+    "nama": "Home Lux Panci Kukus Serbaguna PKSH-28",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/wZc8Xd0B/Home-Lux-Panci-Kukus-Serbaguna-PKSH-28.png"
+  },
+  {
+    "nama": "Cookware Set 6 Pcs",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": "https://i.ibb.co.com/7N0MNnNF/Cookware-Set-6-Pcs.png"
+  },
+  {
+    "nama": "Maxim Ultra Grill",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Panci Listrik 2 in 1 BBQ Grill dan Hot Pot",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Yundai PANCI HOT POT 2 IN 1 HP-32Y",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Panci Penggorengan Set Tirisan 20cm",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "TEXANIA Non-Stick Square Grill Pan 20 cm",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Happycall NEW Special Double Pan",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "QME Cake Pan Series",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Timbangan Digital Omicko OM-7905",
+    "kategori": "rumah tangga",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Maxim Chef Wok 40 cm",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Miyako Penanak Nasi Serbaguna MCG-172 BK",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Maspion Rice Cooker MMC-4015 BS",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Kemoceng Cendol",
+    "kategori": "rumah tangga",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Sikat Bahan Kayu",
+    "kategori": "rumah tangga",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Kemoceng Bulu Ayam",
+    "kategori": "rumah tangga",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Rinnai 201S",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Rinnai 301S",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Rinnai RI-511A",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Rinnai RI-511E",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Rinnai RI-511C",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Rinnai RI-712BGX",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Rinnai RI-302S",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Rinnai RI-202S",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Rinnai RI-522E",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Rinnai RI-522S",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Rinnai RI-522C",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Rinnai RI-602E",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Rinnai RI-602AG",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Rinnai RI-602A",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Sapu Lantai Plastik",
+    "kategori": "rumah tangga",
+    "harga": "15000-25000",
+    "image_url": ""
+  },
+  {
+    "nama": "Philips HD 3003 (1.8 liter)",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Philips Digital Rice Cooker 3000 Series",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Miyako MCM-838",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Miyako MCM-612",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Cosmos CRJ-6305",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Cosmos CRJ-3306",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Sanken Stainless Steel 304 (1.8 Liter)",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Maspion MRJ-1808",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Miyako MCM-18BHB",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Cosmos CRJ-1031 (0.3 liter)",
+    "kategori": "Cooking",
+    "harga": 0,
+    "image_url": ""
+  },
+  {
+    "nama": "Desk fan Miyoshi Besi",
+    "kategori": "elektronik",
+    "harga": 150000,
+    "image_url": ""
+  },
+  {
+    "nama": "SQRS Elektric Kettle",
+    "kategori": "elektronik",
+    "harga": 55000,
+    "image_url": ""
+  },
+  {
+    "nama": "Electric Pot Multi",
+    "kategori": "elektronik",
+    "harga": 55000,
+    "image_url": ""
+  },
+  {
+    "nama": "Mug Hyperlite electric",
+    "kategori": "elektronik",
+    "harga": 35000,
+    "image_url": ""
+  },
+  {
+    "nama": "Panci Kukusan Listrik",
+    "kategori": "Cooking",
+    "harga": 65000,
+    "image_url": ""
+  },
+  {
+    "nama": "Copper Stainless",
+    "kategori": "Cooking",
+    "harga": 85000,
+    "image_url": ""
+  },
+  {
+    "nama": "Wall Fan Miyoshi",
+    "kategori": "elektronik",
+    "harga": "125000-135000",
+    "image_url": ""
+  },
+  {
+    "nama": "Wall Fan Hyperlite",
+    "kategori": "elektronik",
+    "harga": 135000,
+    "image_url": ""
+  },
+  {
+    "nama": "Kipas Angin WF GMC Besi",
+    "kategori": "elektronik",
+    "harga": 235000,
+    "image_url": ""
+  }
+]
