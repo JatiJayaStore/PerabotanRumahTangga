@@ -1,6 +1,5 @@
-/* GANTI URL INI DENGAN ALAMAT GITHUB PAGES ANDA (Bagian akhir) */
+//untuk data harga json  kalo diskon "harga_asli": 22000, "status_harga": "turun"
 const GITHUB_BASE_URL = 'https://jatijayastore.github.io/PerabotanRumahTangga/';
-
 const WA_NUMBER = '6281212664277';
 let products = [];
 let currentFilter = 'Semua';
@@ -28,36 +27,72 @@ function getImageUrl(url) {
 
 async function loadProducts() {
   const grid = document.getElementById('productGrid');
-  grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;">Memuat data toko...</p>';
+  grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;padding:20px;">Memuat data toko...</p>';
 
   try {
     const res = await fetch('data.json');
     if (!res.ok) throw new Error('File data.json tidak ditemukan!');
     
     const data = await res.json();
-    if (!data || data.length === 0) {
-      grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;">Tidak ada produk.</p>';
+    
+// FILTER DATA KOSONG: Nama, Harga, dan Harga 0 tidak boleh muncul
+const filteredData = data.filter(item => {
+  // Jika nama kosong, skip
+  if (!item.nama || typeof item.nama !== 'string' || item.nama.trim() === '') return false;
+  // Jika harga null/undefined/kosong, skip
+  if (item.harga === null || item.harga === undefined || item.harga === '') return false;
+  // Jika harga angka 0 (atau string "0"), skip
+  if (Number(item.harga) === 0) return false; 
+  return true;
+});
+
+    if (!filteredData || filteredData.length === 0) {
+      grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;">Tidak ada produk valid.</p>';
       return;
     }
     
-    products = data;
+    products = filteredData;
     renderProducts(products);
     populateCategories(products);
   } catch (error) {
-    grid.innerHTML = `<p style="color:red;grid-column:1/-1;text-align:center;">Error: ${error.message}. Pastikan Anda sudah upload file data.json!</p>`;
+    grid.innerHTML = `<p style="color:red;grid-column:1/-1;text-align:center;">Error: ${error.message}</p>`;
   }
 }
 
 function renderProducts(data) {
   const grid = document.getElementById('productGrid');
   grid.innerHTML = '';
+  
   data.forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
+    
+    // LOGIKA HARGA NAIK/TURUN
+    let badgeHtml = '';
+    let priceHtml = `<div class="price-tag">${formatHarga(item.harga)}</div>`;
+
+    if (item.status_harga) {
+      if (item.status_harga === 'turun' && item.harga_asli) {
+        badgeHtml = `<span class="badge-container diskon">Diskon!</span>`;
+        priceHtml = `
+          <div class="price-wrapper" style="position:relative; display:inline-block;">
+            <span style="display:block; font-size:0.7rem; text-decoration:line-through; color:#94a3b8;">${formatHarga(item.harga_asli)}</span>
+            <div class="price-tag" style="background:#fee2e2; color:#dc2626;">${formatHarga(item.harga)}</div>
+          </div>
+        `;
+      } else if (item.status_harga === 'naik') {
+        badgeHtml = `<span class="badge-container naik">Naik</span>`;
+        priceHtml = `<div class="price-tag" style="background:#fef3c7; color:#d97706;">${formatHarga(item.harga)}</div>`;
+      }
+    }
+
     card.innerHTML = `
-      <img src="${getImageUrl(item.image_url)}" alt="${item.nama}" loading="lazy" onerror="this.onerror=null;this.src='${getImageUrl()}';">
-      <h4>${item.nama || 'Tanpa Nama'}</h4>
-      <div class="price-tag">${formatHarga(item.harga)}</div>
+      <div class="img-wrapper">
+        <img src="${getImageUrl(item.image_url)}" alt="${item.nama}" loading="lazy" onerror="this.onerror=null;this.src='${getImageUrl()}';">
+        ${badgeHtml}
+      </div>
+      <h4>${item.nama}</h4>
+      ${priceHtml}
     `;
     card.addEventListener('click', () => openModal(item));
     grid.appendChild(card);
@@ -67,9 +102,7 @@ function renderProducts(data) {
 function populateCategories(data) {
   const container = document.getElementById('categoryFilters');
   container.innerHTML = '';
-  // Ambil semua kategori unik yang ada
   const cats = ['Semua', ...new Set(data.map(p => p.kategori).filter(Boolean))];
-  
   cats.forEach(cat => {
     const btn = document.createElement('button');
     btn.className = 'filter-btn' + (cat === currentFilter ? ' active' : '');
@@ -97,15 +130,41 @@ function openModal(item) {
   document.getElementById('modalImage').src = getImageUrl(item.image_url);
   document.getElementById('modalImage').onerror = function() { this.src = getImageUrl(); };
   document.getElementById('modalTitle').textContent = item.nama || 'Tanpa Nama';
-  document.getElementById('modalPrice').textContent = formatHarga(item.harga);
   
-  const message = `Halo, saya tertarik produk "${item.nama}"`;
-  document.getElementById('modalChatBtn').href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
+  let modalPriceHtml = `<div class="price-large">${formatHarga(item.harga)}</div>`;
+  if (item.status_harga === 'turun' && item.harga_asli) {
+    modalPriceHtml = `
+        <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+            <span style="text-decoration:line-through; color:#94a3b8; font-size:1rem;">${formatHarga(item.harga_asli)}</span>
+            <div class="price-large discount">${formatHarga(item.harga)}</div>
+            <span class="badge-container diskon" style="position:static;">Diskon!</span>
+        </div>
+    `;
+  } else if (item.status_harga === 'naik') {
+    modalPriceHtml = `
+        <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+            <div class="price-large" style="color:#d97706;">${formatHarga(item.harga)}</div>
+            <span class="badge-container naik" style="position:static;">Naik</span>
+        </div>
+    `;
+  }
+  document.getElementById('modalPrice').innerHTML = modalPriceHtml;
+
+  // Ambil string harga yang sudah diformat (misal: "Rp 20.000" atau "Hubungi CS")
+const hargaString = formatHarga(item.harga);
+
+// Gabungkan nama produk dan harganya ke dalam pesan
+const message = `Halo, saya tertarik dengan produk "${item.nama}" dengan harga "${hargaString}" dan ingin menanyakan lebih lanjut`;
+
+// Masukkan ke link WhatsApp
+document.getElementById('modalChatBtn').href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
   document.getElementById('productModal').classList.remove('hidden');
 
-  const keywords = (item.nama || '').split(' ').filter(k => k.length > 1);
+  // LOGIKA REKOMENDASI
+  const keywords = (item.nama || '').toLowerCase().split(' ').filter(k => k.length > 1);
   const related = products
-    .filter(p => p.id !== item.id && keywords.some(k => p.nama?.includes(k)))
+    .filter(p => p.nama !== item.nama)
+    .filter(p => keywords.some(k => p.nama?.toLowerCase().includes(k)))
     .slice(0, 4);
     
   const container = document.getElementById('relatedProducts');
