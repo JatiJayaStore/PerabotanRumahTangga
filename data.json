@@ -3,780 +3,846 @@
     "nama": "Payung lipat uv",
     "kategori": "rumah tangga",
     "harga": "22000",
-    "image_url": "PerabotanRumahTangga/Payung_lipat_uv.png"
+    "image_url": "images/Payung_lipat_uv.png"
   },
   {
     "nama": "Payung lipat motiv beruang",
     "kategori": "rumah tangga",
     "harga": "20000",
-    "image_url": "PerabotanRumahTangga/Payung_lipat_motiv_beruang.png"
+    "image_url": "images/Payung_lipat_motiv_beruang.png"
   },
   {
     "nama": "Sikat Kamar mandi",
     "kategori": "rumah tangga",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Sikat_Kamar_mandi.png"
+    "image_url": "images/Sikat_Kamar_mandi.png"
   },
   {
     "nama": "Magic PVA Mop (pel sponge)",
     "kategori": "rumah tangga",
     "harga": "40000",
-    "image_url": "PerabotanRumahTangga/Magic_PVA_Mop_(pel_sponge).png"
+    "image_url": "images/Magic_PVA_Mop_(pel_sponge).png"
   },
   {
     "nama": "Kompor Omicko 1 tungkul KM-201",
     "kategori": "Cooking",
     "harga": "85000",
-    "image_url": "PerabotanRumahTangga/Kompor_Omicko_1_tungkul_KM-201.png"
+    "image_url": "images/Kompor_Omicko_1_tungkul_KM-201.png"
   },
   {
     "nama": "Kompor Omicko 2 Tungku KM-202",
     "kategori": "Cooking",
     "harga": "165000",
-    "image_url": "PerabotanRumahTangga/Kompor_Omicko_2_Tungku_KM-202.png"
+    "image_url": "images/Kompor_Omicko_2_Tungku_KM-202.png"
   },
   {
     "nama": "Kompor 1 Tungku GSF G-3615",
     "kategori": "Cooking",
     "harga": "90000",
-    "image_url": "PerabotanRumahTangga/Kompor_1_Tungku_GSF_G-3615.png"
+    "image_url": "images/Kompor_1_Tungku_GSF_G-3615.png"
   },
   {
     "nama": "Dispenser Sanex",
     "kategori": "rumah tangga",
     "harga": "115000",
-    "image_url": "PerabotanRumahTangga/Dispenser_Sanex.png"
+    "image_url": "images/Dispenser_Sanex.png"
   },
   {
     "nama": "Sapu Lantai Íjuk",
     "kategori": "rumah tangga",
     "harga": "15000-25000",
-    "image_url": "PerabotanRumahTangga/Sapu_Lantai_Íjuk.png"
+    "image_url": "images/Sapu_Lantai_Íjuk.png"
   },
   {
     "nama": "panci susu hitam",
     "kategori": "Cooking",
     "harga": "30000-40000",
-    "image_url": "PerabotanRumahTangga/panci_susu_hitam.png"
+    "image_url": "images/panci_susu_hitam.png"
   },
   {
     "nama": "panci susu warna",
     "kategori": "Cooking",
     "harga": "30000",
-    "image_url": "PerabotanRumahTangga/panci_susu_warna.png"
+    "image_url": "images/panci_susu_warna.png"
   },
   {
     "nama": "one set cutting pengupas",
     "kategori": "Cooking",
     "harga": "75000",
-    "image_url": "PerabotanRumahTangga/one_set_cutting_pengupas.png"
+    "image_url": "images/one_set_cutting_pengupas.png"
   },
   {
     "nama": "Setrika Hyperlite",
     "kategori": "elektronik",
     "harga": "80000",
-    "image_url": "PerabotanRumahTangga/Setrika_Hyperlite.png"
+    "image_url": "images/Setrika_Hyperlite.png"
   },
   {
     "nama": "Juice Blender Portable M-192",
     "kategori": "Cooking",
     "harga": "55000",
-    "image_url": "PerabotanRumahTangga/Juice_Blender_Portable_M-192.png"
+    "image_url": "images/Juice_Blender_Portable_M-192.png"
   },
   {
     "nama": "Mixer Omicko MX-1506",
     "kategori": "Cooking",
     "harga": "125000",
-    "image_url": "PerabotanRumahTangga/Mixer_Omicko_MX-1506.png"
+    "image_url": "images/Mixer_Omicko_MX-1506.png"
   },
   {
     "nama": "Super Hand Mixer HE-133",
     "kategori": "Cooking",
     "harga": "85000",
-    "image_url": "PerabotanRumahTangga/Super_Hand_Mixer_HE-133.png"
+    "image_url": "images/Super_Hand_Mixer_HE-133.png"
   },
   {
     "nama": "Setrika Miyako EI-1000 M",
     "kategori": "elektronik",
     "harga": "115000",
-    "image_url": "PerabotanRumahTangga/Setrika_Miyako_EI-1000_M.png"
+    "image_url": "images/Setrika_Miyako_EI-1000_M.png"
   },
   {
     "nama": "Setrika Cosmos CI-3120 N Jet Black",
     "kategori": "elektronik",
     "harga": "115000",
-    "image_url": "PerabotanRumahTangga/Setrika_Cosmos_CI-3120_N_Jet_Black.png"
+    "image_url": "images/Setrika_Cosmos_CI-3120_N_Jet_Black.png"
   },
   {
-    "nama": "Antena Digital Intra INT 119",
+    "nama": "Antena Digital Intra INT_119",
     "kategori": "elektronik",
     "harga": "110000",
-    "image_url": "PerabotanRumahTangga/Antena_Digital_Intra_INT_119.png"
+    "image_url": "images/Antena_Digital_Intra_INT_119.png"
   },
   {
     "nama": "Mini Speaker Music",
     "kategori": "elektronik",
     "harga": "60000",
-    "image_url": "PerabotanRumahTangga/Mini_Speaker_Music.png"
+    "image_url": "images/Mini_Speaker_Music.png"
   },
   {
     "nama": "Mitsuyama Senter Genggam MS-1239",
     "kategori": "elektronik",
     "harga": "18000",
-    "image_url": "PerabotanRumahTangga/Mitsuyama_Senter_Genggam_MS-1239.png"
+    "image_url": "images/Mitsuyama_Senter_Genggam_MS-1239.png"
   },
   {
     "nama": "Mitsuyama Senter LED & Lamp Emergency MS-1220",
     "kategori": "elektronik",
     "harga": "110000",
-    "image_url": "PerabotanRumahTangga/Mitsuyama_Senter_LED_&_Lamp_Emergency_MS-1220.png"
+    "image_url": "images/Mitsuyama_Senter_LED_&_Lamp_Emergency_MS-1220.png"
   },
   {
     "nama": "Rolinson Senter Tangan RL-192",
     "kategori": "elektronik",
     "harga": "9000",
-    "image_url": "PerabotanRumahTangga/Rolinson_Senter_Tangan_RL-192.png"
+    "image_url": "images/Rolinson_Senter_Tangan_RL-192.png"
   },
   {
     "nama": "Mitsuyama Lampu Emergency (15 Watt)",
     "kategori": "elektronik",
     "harga": "35000",
-    "image_url": "PerabotanRumahTangga/Mitsuyama_Lampu_Emergency_(15 Watt).png"
+    "image_url": "images/Mitsuyama_Lampu_Emergency_(15 Watt).png"
   },
   {
     "nama": "HI-COOK Gas Portable",
     "kategori": "",
     "harga": "20000",
-    "image_url": "PerabotanRumahTangga/HI-COOK_Gas_Portable.png"
+    "image_url": "images/HI-COOK_Gas_Portable.png"
   },
   {
     "nama": "Lampu Hannochs Nova (12Watt)",
     "kategori": "",
     "harga": "25000",
-    "image_url": "PerabotanRumahTangga/Lampu_Hannochs_Nova_(12Watt).png"
+    "image_url": "images/Lampu_Hannochs_Nova_(12Watt).png"
   },
   {
     "nama": "Lampu Hannochs Nova (45 Watt)",
     "kategori": "",
     "harga": "75000",
-    "image_url": "PerabotanRumahTangga/Lampu_Hannochs_Nova_(45 Watt).png"
+    "image_url": "images/Lampu_Hannochs_Nova_(45 Watt).png"
   },
   {
     "nama": "Lampu Hannochs Fortuner (45 Watt)",
     "kategori": "",
     "harga": "75000",
-    "image_url": "PerabotanRumahTangga/Lampu_Hannochs_Fortuner_(45 Watt).png"
+    "image_url": "images/Lampu_Hannochs_Fortuner_(45 Watt).png"
   },
   {
     "nama": "Rice CookerCosmos CRJ-1001 N 0,6 liter",
     "kategori": "",
     "harga": "225000",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Cosmos_CRJ-1001_N_0,6 liter.png"
+    "image_url": "images/Rice_Cooker_Cosmos_CRJ-1001_N_0,6 liter.png"
   },
   {
     "nama": "Rice Cooker Miyako MCM- 606 A",
     "kategori": "",
     "harga": "220000",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Miyako_MCM- 606_A.png"
+    "image_url": "images/Rice_Cooker_Miyako_MCM- 606_A.png"
   },
   {
     "nama": "Rice Cooker Miyako PSG-607 0.6 liter",
     "kategori": "",
     "harga": "185000",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Miyako_PSG-607_0.6_liter.png"
+    "image_url": "Rice_Cooker_Miyako_PSG-607_0.6_liter.png"
   },
   {
     "nama": "Rice Cooker Sharp KS-B18MG",
     "kategori": "",
     "harga": "275000",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Sharp_KS-B18MG.png"
+    "image_url": "images/Rice_Cooker_Sharp_KS-B18MG.png"
   },
   {
     "nama": "Rice Cooker Cosmos CRJ-1803",
     "kategori": "",
     "harga": "235000",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Cosmos_CRJ-1803.png"
+    "image_url": "images/Rice_Cooker_Cosmos_CRJ-1803.png"
   },
   {
     "nama": "Rice Cooker Miyako MCM-721 LST",
     "kategori": "",
     "harga": "375000",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Miyako_MCM-721_LST.png"
+    "image_url": "images/Rice_Cooker_Miyako_MCM-721_LST.png"
   },
   {
     "nama": "Rice Cooker Miyako MCM-610",
     "kategori": "",
     "harga": "220000",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Miyako_MCM-610.png"
+    "image_url": "images/Rice_Cooker_Miyako_MCM-610.png"
   },
   {
     "nama": "Rice Cooker Miyako MCG-751 SBC 3 liter",
     "kategori": "",
     "harga": "450000",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Miyako_MCG-751_SBC_3_liter.png"
+    "image_url": "images/Rice_Cooker_Miyako_MCG-751_SBC_3_liter.png"
   },
   {
     "nama": "Rice Cooker Cosmos CRJ-5508 BC",
     "kategori": "",
     "harga": "375000",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Cosmos_CRJ-5508_BC.png"
+    "image_url": "images/Rice_Cooker_Cosmos_CRJ-5508_BC.png"
   },
   {
     "nama": "Rice Cooker Yong Ma SMC 5061 1,0 liter",
     "kategori": "",
     "harga": "625000",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Yong_Ma_SMC_5061_1,0_liter.png"
+    "image_url": "images/Rice_Cooker_Yong_Ma_SMC_5061_1,0_liter.png"
   },
   {
     "nama": "Rice Cooker Yong Ma SMJ-4013 8,2 liter",
     "kategori": "",
     "harga": "625000",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Yong_Ma_SMJ-4013_8,2_liter.png"
+    "image_url": "imges/Rice_Cooker_Yong_Ma_SMJ-4013_8,2_liter.png"
   },
   {
     "nama": "Rice Cooker Panasonic SR-CEZ18",
     "kategori": "",
     "harga": "585000",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Panasonic_SR-CEZ18.png"
+    "image_url": "images/Rice_Cooker_Panasonic_SR-CEZ18.png"
   },
   {
     "nama": "Rice Cooker Maspion MRJ-1808",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Maspion_MRJ-1808.png"
+    "image_url": "images/Rice_Cooker_Maspion_MRJ-1808.png"
   },
   {
     "nama": "Rice Cooker Miyako MCM-18BHB",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Miyako_MCM-18BHB.png"
+    "image_url": "images/Rice_Cooker_Miyako_MCM-18BHB.png"
   },
   {
     "nama": "Rice Cooker Cosmos CRJ-6305",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Cosmos_CRJ-6305.png"
+    "image_url": "images/Rice_Cooker_Cosmos_CRJ-6305.png"
   },
   {
     "nama": "Rice Cooker Cosmos CRJ-3306",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Cosmos_CRJ-3306.png"
+    "image_url": "images/Rice_Cooker_Cosmos_CRJ-3306.png"
   },
   {
     "nama": "Rice Cooker Omicko Mini 1.2 Liter (seri MC-101PL)",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Cooker_Omicko_Mini_1.2_Liter_(seri_MC-101PL).png"
+    "image_url": "images/Cooker_Omicko_Mini_1.2_Liter_(seri_MC-101PL).png"
   },
   {
     "nama": "Rice Cooker Sanken Stainless Steel 304 1,8 Liter",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Sanken_Stainless_Steel_304_1,8_Liter.png"
+    "image_url": "images/Rice_Cooker_Sanken_Stainless_Steel_304_1,8_Liter.png"
   },
   {
     "nama": "Rice Cooker Philips HD 3003 1,8 liter",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Philips_HD_3003_1,8_liter.png"
+    "image_url": "images/Rice_Cooker_Philips_HD_3003_1,8_liter.png"
   },
   {
     "nama": "Rice Cooker Digital Philips 3000 Series (HD4712/31)",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Digital_Philips_3000_Series_(HD4712).png"
+    "image_url": "images/Rice_Cooker_Digital_Philips_3000_Series_(HD4712).png"
   },
   {
     "nama": "Rice Cooker Miyako MCM-838",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Miyako_MCM-838.png"
+    "image_url": "images/Rice_Cooker_Miyako_MCM-838.png"
   },
   {
     "nama": "Rice Cooker Miyako MCM-612",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Miyako_MCM-612.png"
+    "image_url": "images/Rice_Cooker_Miyako_MCM-612.png"
   },
   {
     "nama": "Lampu Philips RadiantLine LED 40Watt",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Lampu_Philips_RadiantLine_LED_40Watt.png"
+    "image_url": "images/Lampu_Philips_RadiantLine_LED_40Watt.png"
   },
   {
     "nama": "Lampu Philips Tornado Helix (55 Watt)",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Lampu_Philips_Tornado_Helix_(55 Watt).png"
+    "image_url": "images/Lampu_Philips_Tornado_Helix_(55 Watt).png"
   },
   {
     "nama": "Maxim Ultra Grill",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Maxim_Ultra_Grill.png"
+    "image_url": "images/Maxim_Ultra_Grill.png"
   },
   {
     "nama": "Panci Penggorengan Set Tirisan 20cm",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Panci_Penggorengan_Set_Tirisan_20cm.png"
+    "image_url": "images/Panci_Penggorengan_Set_Tirisan_20cm.png"
   },
   {
     "nama": "Yundai Panci HOT POT 2 IN 1 HP-32Y",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Yundai_Panci_HOT_POT_2_IN_1_HP-32Y.png"
+    "image_url": "images/Yundai_Panci_HOT_POT_2_IN_1_HP-32Y.png"
   },
   {
     "nama": "Panci Happycall NEW Special Double",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Panci_Happycall_NEW_Special_Double.png"
+    "image_url": "images/Panci_Happycall_NEW_Special_Double.png"
   },
   {
     "nama": "Kompor Rinnai 2 Tungku RI-522C",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kompor_Rinnai_2_Tungku_RI-522C.png"
+    "image_url": "images/Kompor_Rinnai_2_Tungku_RI-522C.png"
   },
   {
     "nama": "Kompor Rinnai 2 Tungku RI-602E",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kompor_Rinnai_2_Tungku_RI-602E.png"
+    "image_url": "images/Kompor_Rinnai_2_Tungku_RI-602E.png"
   },
   {
     "nama": "Kompor Rinnai 2 Tungku RI-602AG",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kompor_Rinnai_2_Tungku_RI-602AG.png"
+    "image_url": "images/Kompor_Rinnai_2_Tungku_RI-602AG.png"
   },
   {
     "nama": "Kompor Rinnai 2 Tungku RI-602A",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kompor_Rinnai_2_Tungku_RI-602A.png"
+    "image_url": "images/Kompor_Rinnai_2_Tungku_RI-602A.png"
   },
   {
     "nama": "Kompor Rinnai 2 Tungku RI-302S",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kompor_Rinnai_2_Tungku_RI-302S.png"
+    "image_url": "images/Kompor_Rinnai_2_Tungku_RI-302S.png"
   },
   {
     "nama": "Kompor Rinnai 2 Tungku RI-202S",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kompor_Rinnai_2_Tungku_RI-202S.png"
+    "image_url": "images/Kompor_Rinnai_2_Tungku_RI-202S.png"
   },
   {
     "nama": "Kompor Rinnai 2 Tungku RI-522E",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kompor_Rinnai_2_Tungku_RI-522E.png"
+    "image_url": "images/Kompor_Rinnai_2_Tungku_RI-522E.png"
   },
   {
     "nama": "Kompor Rinnai 2 Tungku RI-522S",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kompor_Rinnai_2_Tungku_RI-522S.png"
+    "image_url": "images/Kompor_Rinnai_2_Tungku_RI-522S.png"
   },
   {
     "nama": "Kompor Rinnai 2 Tungku RI-712BGX",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kompor_Rinnai_2_Tungku_RI-712BGX.png"
+    "image_url": "images/Kompor_Rinnai_2_Tungku_RI-712BGX.png"
   },
   {
     "nama": "Kompor Rinnai 2 Tungku RI-602BGX",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kompor_Rinnai_2_Tungku_RI-602BGX.png"
+    "image_url": "images/Kompor_Rinnai_2_Tungku_RI-602BGX.png"
   },
   {
     "nama": "Kompor Rinnai 1 Tungku RI-511C",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kompor_Rinnai_1_Tungku_RI-511C.png"
+    "image_url": "images/Kompor_Rinnai_1_Tungku_RI-511C.png"
   },
   {
     "nama": "Kompor Rinnai 1 Tungku 201S",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kompor_Rinnai_1_Tungku_201S.png"
+    "image_url": "images/Kompor_Rinnai_1_Tungku_201S.png"
   },
   {
     "nama": "Kompor Rinnai 1 Tungku 301S",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kompor_Rinnai_1_Tungku_301S.png"
+    "image_url": "images/Kompor_Rinnai_1_Tungku_301S.png"
   },
   {
     "nama": "Kompor Rinnai 1 Tungku RI-511E",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kompor_Rinnai_1_Tungku_RI-511E.png"
+    "image_url": "images/Kompor_Rinnai_1_Tungku_RI-511E.png"
   },
   {
     "nama": "Kompor Rinnai 1 Tungku RI-511A",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kompor_Rinnai_1_Tungku_RI-511A.png"
+    "image_url": "images/Kompor_Rinnai_1_Tungku_RI-511A.png"
   },
   {
     "nama": "Kemoceng Cendol",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kemoceng_Cendol.png"
+    "image_url": "images/Kemoceng_Cendol.png"
   },
   {
     "nama": "Kemoceng Bulu Ayam",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Kemoceng_Bulu_Ayam.png"
+    "image_url": "images/Kemoceng_Bulu_Ayam.png"
   },
   {
     "nama": "Philips Blender 3000 Series  (HR2042/13)",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Philips_Blender_3000 Series _(HR2042_13).png"
+    "image_url": "images/Philips_Blender_3000 Series _(HR2042_13).png"
   },
   {
     "nama": "Philips Blender Seri 5000 (HR2223)",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Philips_Blender_Seri_5000_(HR2223).png"
+    "image_url": "images/Philips_Blender_Seri_5000_(HR2223).png"
   },
   {
     "nama": "Panci Listrik 2 in 1 BBQ Grill dan Hot Pot",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Panci_Listrik_2_in_1_BBQ_Grill_dan_Hot_Pot.png"
+    "image_url": "images/Panci_Listrik_2_in_1_BBQ_Grill_dan_Hot_Pot.png"
   },
   {
     "nama": "Maspion Rice Cooker MMC-4015 BS",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Maspion_Rice_Cooker_MMC-4015_BS.png"
+    "image_url": "images/Maspion_Rice_Cooker_MMC-4015_BS.png"
   },
   {
     "nama": "Rice Cooker Miyako MCG-172 BK",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Rice_Cooker_Miyako_MCG-172_BK.png"
+    "image_url": "images/Rice_Cooker_Miyako_MCG-172_BK.png"
   },
   {
     "nama": "Timbangan Dapur Digital SF-400",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Timbangan_Dapur_Digital_SF-400.png"
+    "image_url": "images/Timbangan_Dapur_Digital_SF-400.png"
   },
   {
     "nama": "Timbangan Digital Omicko OM-7905",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Timbangan_Digital_Omicko_OM-7905.png"
+    "image_url": "images/Timbangan_Digital_Omicko_OM-7905.png"
   },
   {
     "nama": "Warmer Square Pan (Prasmanan penghangat)",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Warmer_Square_Pan_(Prasmanan_penghangat).png"
+    "image_url": "images/Warmer_Square_Pan_(Prasmanan_penghangat).png"
   },
   {
     "nama": "Dispenser Sabun Cair Single",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Dispenser_Sabun_Cair_Single.png"
+    "image_url": "images/Dispenser_Sabun_Cair_Single.png"
   },
   {
     "nama": "Blender Philips HR2115",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Blender_Philips_HR2115.png"
+    "image_url": "images/Blender_Philips_HR2115.png"
   },
   {
     "nama": "Blender Cosmos (CB-281P)",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Blender_Cosmos_(CB-281P).png"
+    "image_url": "images/Blender_Cosmos_(CB-281P).png"
   },
   {
     "nama": "Blender Miyako (BL-102 PL)",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Blender_Miyako_(BL-102_PL).png"
+    "image_url": "images/Blender_Miyako_(BL-102_PL).png"
   },
   {
     "nama": "Termos Elephant Plastics",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Termos_Elephant_Plastics.png"
+    "image_url": "images/Termos_Elephant_Plastics.png"
   },
   {
     "nama": "Termos Lion Star Vacuum Flask Solaris SN-8",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Termos_Lion_Star_Vacuum_Flask_Solaris_SN-8.png"
+    "image_url": "images/Termos_Lion_Star_Vacuum_Flask_Solaris_SN-8.png"
   },
   {
     "nama": "Termos Nasi atau Termos Es Motif bunga",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Termos_Nasi_atau_Termos_Es_Motif_bunga.png"
+    "image_url": "images/Termos_Nasi_atau_Termos_Es_Motif_bunga.png"
   },
   {
     "nama": "Lion Star Arizona Drink Jar",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Lion_Star_Arizona_Drink_Jar.png"
+    "image_url": "images/Lion_Star_Arizona_Drink_Jar.png"
   },
   {
     "nama": "Lion Star Nice Day Rice Bucket",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Lion_Star_Nice_Day_Rice_Bucket.png"
+    "image_url": "images/Lion_Star_Nice_Day_Rice_Bucket.png"
   },
   {
     "nama": "Lion Star Basic Home Pandan Rice",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Lion_Star_Basic Home_Pandan_Rice.png"
+    "image_url": "images/Lion_Star_Basic Home_Pandan_Rice.png"
   },
   {
     "nama": "Termos Pompa Elephant",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Termos_Pompa_Elephant.png"
+    "image_url": "images/Termos_Pompa_Elephant.png"
   },
   {
     "nama": "Philips Hand Mixer 3000 Series HR1552 50",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Philips_Hand_Mixer_3000_Series_HR1552_50.png"
+    "image_url": "images/Philips_Hand_Mixer_3000_Series_HR1552_50.png"
   },
   {
     "nama": "Maspion Hand Mixer MT-1192",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Maspion_Hand_Mixer_MT-1192.png"
+    "image_url": "images/Maspion_Hand_Mixer_MT-1192.png"
   },
   {
     "nama": "Miyako Hand Mixer HM-620",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Miyako_Hand_Mixer_HM-620.png"
+    "image_url": "images/Miyako_Hand_Mixer_HM-620.png"
   },
   {
     "nama": "Hand mixer Cosmos  CM-1279",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Hand_mixer_Cosmos _CM-1279.png"
+    "image_url": "images/Hand_mixer_Cosmos _CM-1279.png"
   },
   {
     "nama": "Philips Daily Collection Juicer HR1811",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Philips_Daily_Collection_Juicer_HR1811.png"
+    "image_url": "images/Philips_Daily_Collection_Juicer_HR1811.png"
   },
   {
     "nama": "Miyako Juicer Extractor JE-607",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Miyako_Juicer_Extractor_JE-607.png"
+    "image_url": "images/Miyako_Juicer_Extractor_JE-607.png"
   },
   {
     "nama": "Panci Maspion Steamer Pancaguna",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Panci_Maspion_Steamer_Pancaguna.png"
+    "image_url": "images/Panci_Maspion_Steamer_Pancaguna.png"
   },
   {
     "nama": "Pemanggang Roti Pensonic PTI-929",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Pemanggang_Roti_Pensonic_PTI-929.png"
+    "image_url": "images/Pemanggang_Roti_Pensonic_PTI-929.png"
   },
   {
     "nama": "Sharp Sandwich Toaster KZS-70L(W)",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Sharp_Sandwich_Toaster_KZS-70L(W).png"
+    "image_url": "images/Sharp_Sandwich_Toaster_KZS-70L(W).png"
   },
   {
     "nama": "Lampu Surya SQL L4301N",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Lampu_Surya_SQL_L4301N.png"
+    "image_url": "images/Lampu_Surya_SQL_L4301N.png"
   },
   {
     "nama": "Intelligent Electric Garlic Machine",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Intelligent_Electric_Garlic_Machine.png"
+    "image_url": "images/Intelligent_Electric_Garlic_Machine.png"
   },
   {
     "nama": "Handheld Fan T-10",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Handheld_Fan_T-10.png"
+    "image_url": "images/Handheld_Fan_T-10.png"
   },
   {
     "nama": "Lampu Surya SQL L2207",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Lampu_Surya_SQL_L2207.png"
+    "image_url": "images/Lampu_Surya_SQL_L2207.png"
   },
   {
     "nama": "Hand Pat Good Eater (Model M-796)",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Hand_Pat_Good_Eater_(Model M-796).png"
+    "image_url": "images/Hand_Pat_Good_Eater_(Model M-796).png"
   },
   {
     "nama": "Pengharum Stella Matic Refill",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Pengharum_Stella_Matic_Refill.png"
+    "image_url": "images/Pengharum_Stella_Matic_Refill.png"
   },
   {
     "nama": "BALI 6 Piece Knife Set",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/BALI_6_Piece_Knife_Set.png"
+    "image_url": "images/BALI_6_Piece_Knife_Set.png"
   },
   {
     "nama": "Home Lux Panci Kukus Serbaguna PKSH-28",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Home_Lux_Panci_Kukus_Serbaguna_PKSH-28.png"
+    "image_url": "images/Home_Lux_Panci_Kukus_Serbaguna_PKSH-28.png"
   },
   {
     "nama": "TEXANIA Non-Stick Square Grill Pan 20 cm",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/TEXANIA_Non-Stick_Square_Grill_Pan_20_cm.png"
+    "image_url": "images/TEXANIA_Non-Stick_Square_Grill_Pan_20_cm.png"
   },
   {
     "nama": "QME Cake Pan Series",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/QME_Cake_Pan_Series.png"
+    "image_url": "images/QME_Cake_Pan_Series.png"
   },
   {
     "nama": "Maxim Chef Wok Fan 40 cm",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Maxim_Chef_Wok_Fan_40_cm.png"
+    "image_url": "images/Maxim_Chef_Wok_Fan_40_cm.png"
   },
   {
     "nama": "Sikat Bahan Kayu",
     "kategori": "",
     "harga": "",
-    "image_url": "PerabotanRumahTangga/Sikat_Bahan_Kayu.png"
+    "image_url": "images/Sikat_Bahan_Kayu.png"
   },
   {
     "nama": "Sapu Lantai Plastik",
     "kategori": "",
     "harga": "15000-30000",
-    "image_url": "PerabotanRumahTangga/Sapu_Lantai_Plastik.png"
+    "image_url": "images/Sapu_Lantai_Plastik.png"
   },
   {
     "nama": "SQRS Elektric Kettle",
     "kategori": "",
     "harga": "55000",
-    "image_url": "PerabotanRumahTangga/SQRS_Elektric_Kettle.png"
+    "image_url": "images/SQRS_Elektric_Kettle.png"
   },
   {
     "nama": "Desk fan Miyoshi Besi",
     "kategori": "",
     "harga": "150000",
-    "image_url": "PerabotanRumahTangga/Desk_fan_Miyoshi_Besi.png"
+    "image_url": "images/Desk_fan_Miyoshi_Besi.png"
   },
   {
     "nama": "Electric Pot Multi",
     "kategori": "",
     "harga": "55000",
-    "image_url": "PerabotanRumahTangga/Electric_Pot_Multi.png"
+    "image_url": "images/Electric_Pot_Multi.png"
   },
   {
     "nama": "Mug Hyperlite electric",
     "kategori": "",
     "harga": "35000",
-    "image_url": "PerabotanRumahTangga/Mug_Hyperlite_electric.png"
+    "image_url": "images/Mug_Hyperlite_electric.png"
   },
   {
     "nama": "Panci Kukusan Listrik Sun Glass",
     "kategori": "",
     "harga": "65000",
-    "image_url": "PerabotanRumahTangga/Panci_Kukusan_Listrik_Sun_Glass.png"
+    "image_url": "images/Panci_Kukusan_Listrik_Sun_Glass.png"
   },
   {
     "nama": "Copper Stainless SUS 304",
     "kategori": "",
     "harga": "85000",
-    "image_url": "PerabotanRumahTangga/Copper_Stainless_SUS_304.png"
+    "image_url": "images/Copper_Stainless_SUS_304.png"
   },
   {
     "nama": "Wall Fan Miyoshi",
     "kategori": "",
     "harga": "125000",
-    "image_url": "PerabotanRumahTangga/Wall_Fan_Miyoshi.png"
+    "image_url": "images/Wall_Fan_Miyoshi.png"
   },
   {
     "nama": "Wall Fan Hyperlite",
     "kategori": "",
     "harga": "135000",
-    "image_url": "PerabotanRumahTangga/Wall_Fan_Hyperlite.png"
+    "image_url": "images/Wall_Fan_Hyperlite.png"
   },
   {
     "nama": "Kipas Angin WF GMC Besi",
     "kategori": "",
     "harga": "235000",
-    "image_url": "PerabotanRumahTangga/Kipas_Angin_WF_GMC_Besi.png"
+    "image_url": "images/Kipas_Angin_WF_GMC_Besi.png"
   },
   {
     "nama": "Kipas Angin WF Miyoshi Besi",
     "kategori": "",
     "harga": "200000",
-    "image_url": "PerabotanRumahTangga/Kipas_Angin_WF_Miyoshi_Besi.png"
+    "image_url": "images/Kipas_Angin_WF_Miyoshi_Besi.png"
   },
   {
     "nama": "DeskFan Sanex",
     "kategori": "",
     "harga": "95000",
-    "image_url": "PerabotanRumahTangga/DeskFan_Sanex.png"
+    "image_url": "images/DeskFan_Sanex.png"
   },
   {
     "nama": "Stand Fan Miyoshi",
     "kategori": "",
     "harga": "125000",
-    "image_url": "PerabotanRumahTangga/Stand_Fan_Miyoshi.png"
+    "image_url": "images/Stand_Fan_Miyoshi.png"
   },
   {
     "nama": "Kipas Angin Omicko 3in1",
     "kategori": "",
     "harga": "200000",
-    "image_url": "PerabotanRumahTangga/Kipas_Angin_Omicko_3in1.png"
+    "image_url": "images/Kipas_Angin_Omicko_3in1.png"
   },
   {
     "nama": "Kipas Angin Welhome 4in1",
     "kategori": "",
     "harga": "225000",
-    "image_url": "PerabotanRumahTangga/Kipas_Angin_Welhome_4in1.png"
+    "image_url": "images/Kipas_Angin_Welhome_4in1.png"
   },
   {
     "nama": "Kipas Angin Miyoshi Jepit 3in1",
     "kategori": "",
     "harga": "65000",
-    "image_url": "PerabotanRumahTangga/Kipas_Angin_Miyoshi_Jepit_3in1.png"
+    "image_url": "images/Kipas_Angin_Miyoshi_Jepit_3in1.png"
   },
   {
     "nama": "Kipas Angin Kyuzu Jepit 3in1",
     "kategori": "",
     "harga": "75000",
-    "image_url": "PerabotanRumahTangga/Kipas_Angin_Kyuzu_Jepit_3in1.png"
+    "image_url": "images/Kipas_Angin_Kyuzu_Jepit_3in1.png"
+  },
+  {
+    "nama": "Kipas Angin Mitsuyama Lipat",
+    "kategori": "",
+    "harga": "40000",
+    "image_url": "images/Kipas_Angin_Mitsuyama_Lipat.png"
+  },
+  {
+    "nama": "Kipas Angin Mitsuyama Multi",
+    "kategori": "",
+    "harga": "100000",
+    "image_url": "images/Kipas_Angin_Mitsuyama_Multi.png"
+  },
+  {
+    "nama": "Kipas Angin Sekai Besi",
+    "kategori": "",
+    "harga": "125000",
+    "image_url": "images/Kipas_Angin_Sekai_Besi.png"
+  },
+  {
+    "nama": "Kipas Angin Mitsuyama 9 inc",
+    "kategori": "",
+    "harga": "95000",
+    "image_url": "images/Kipas_Angin_Mitsuyama_9_inc.png"
+  },
+  {
+    "nama": "Kipas Angin Miyoshi Plastik",
+    "kategori": "",
+    "harga": "125000",
+    "image_url": "images/Kipas_Angin_Miyoshi_Plastik.png"
+  },
+  {
+    "nama": "Kipas Angin Mitsuyama 12 inc",
+    "kategori": "",
+    "harga": "115000",
+    "image_url": "images/Kipas_Angin_Mitsuyama_12_inc.png"
+  },
+  {
+    "nama": "Corong Plastik Sebaguna",
+    "kategori": "",
+    "harga": "",
+    "image_url": "images/Corong_Plastik_Serbaguna.png"
+  },
+  {
+    "nama": "Setrika Philips",
+    "kategori": "",
+    "harga": "300000",
+    "image_url": ""
+  },
+  {
+    "nama": "Setrika Philips",
+    "kategori": "",
+    "harga": "300000",
+    "image_url": ""
+  },
+  {
+    "nama": "Setrika Philips",
+    "kategori": "",
+    "harga": "165000",
+    "image_url": ""
+  },
+  {
+    "nama": "Setrika Philips",
+    "kategori": "",
+    "harga": "225000",
+    "image_url": ""
   }
 ]
