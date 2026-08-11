@@ -17,9 +17,13 @@ function formatHarga(value) {
   return `Rp ${num.toLocaleString('id-ID')}`;
 }
 
+// --- PERBAIKAN 1: Memotong awalan "images/" ---
 function getImageUrl(url) {
   if (url && typeof url === 'string' && url.trim().length > 0) {
-    if (url.startsWith('images/')) return GITHUB_BASE_URL + url;
+    if (url.startsWith('images/')) {
+      // Hapus 'images/' agar pathnya langsung digabung dengan base url
+      return GITHUB_BASE_URL + url.substring(7);
+    }
     return url;
   }
   return 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300"%3E%3Crect width="300" height="300" fill="%23f3f4f6"/%3E%3Ctext x="150" y="150" font-family="sans-serif" font-size="18" fill="%239ca3af" text-anchor="middle" dy=".3em"%3ENo Image%3C/text%3E%3C/svg%3E';
@@ -35,16 +39,12 @@ async function loadProducts() {
     
     const data = await res.json();
     
-// FILTER DATA KOSONG: Nama, Harga, dan Harga 0 tidak boleh muncul
-const filteredData = data.filter(item => {
-  // Jika nama kosong, skip
-  if (!item.nama || typeof item.nama !== 'string' || item.nama.trim() === '') return false;
-  // Jika harga null/undefined/kosong, skip
-  if (item.harga === null || item.harga === undefined || item.harga === '') return false;
-  // Jika harga angka 0 (atau string "0"), skip
-  if (Number(item.harga) === 0) return false; 
-  return true;
-});
+    const filteredData = data.filter(item => {
+      if (!item.nama || typeof item.nama !== 'string' || item.nama.trim() === '') return false;
+      if (item.harga === null || item.harga === undefined || item.harga === '') return false;
+      if (Number(item.harga) === 0) return false; 
+      return true;
+    });
 
     if (!filteredData || filteredData.length === 0) {
       grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;">Tidak ada produk valid.</p>';
@@ -86,6 +86,7 @@ function renderProducts(data) {
       }
     }
 
+    // --- PERBAIKAN 2: Tukar urutan h4 dan img-wrapper ---
     card.innerHTML = `
       <div class="img-wrapper">
         <img src="${getImageUrl(item.image_url)}" alt="${item.nama}" loading="lazy" onerror="this.onerror=null;this.src='${getImageUrl()}';">
@@ -150,17 +151,11 @@ function openModal(item) {
   }
   document.getElementById('modalPrice').innerHTML = modalPriceHtml;
 
-  // Ambil string harga yang sudah diformat (misal: "Rp 20.000" atau "Hubungi CS")
-const hargaString = formatHarga(item.harga);
-
-// Gabungkan nama produk dan harganya ke dalam pesan
-const message = `Halo, saya tertarik dengan produk "${item.nama}" dengan harga "${hargaString}" dan ingin menanyakan lebih lanjut`;
-
-// Masukkan ke link WhatsApp
-document.getElementById('modalChatBtn').href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
+  const hargaString = formatHarga(item.harga);
+  const message = `Halo, saya tertarik dengan produk "${item.nama}" dengan harga "${hargaString}" dan ingin menanyakan lebih lanjut`;
+  document.getElementById('modalChatBtn').href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
   document.getElementById('productModal').classList.remove('hidden');
 
-  // LOGIKA REKOMENDASI
   const keywords = (item.nama || '').toLowerCase().split(' ').filter(k => k.length > 1);
   const related = products
     .filter(p => p.nama !== item.nama)
