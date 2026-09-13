@@ -39,19 +39,24 @@ async function loadProducts() {
     
     const data = await res.json();
     
-    const filteredData = data.filter(item => {
-      if (!item.nama || typeof item.nama !== 'string' || item.nama.trim() === '') return false;
-      if (item.harga === null || item.harga === undefined || item.harga === '') return false;
-      if (Number(item.harga) === 0) return false; 
-      return true;
-    });
+async function loadProducts() {
+  const grid = document.getElementById('productGrid');
+  grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;padding:20px;">Memuat data toko...</p>';
 
-    if (!filteredData || filteredData.length === 0) {
-      grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;">Tidak ada produk valid.</p>';
+  try {
+    const res = await fetch('data.json');
+    if (!res.ok) throw new Error('File data.json tidak ditemukan!');
+    
+    const data = await res.json();
+    
+    // --- LOGIKA FILTER DIHAPUS ---
+    // Semua data langsung dimasukkan ke variabel products
+    if (!data || data.length === 0) {
+      grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;">Tidak ada produk.</p>';
       return;
     }
     
-    products = filteredData;
+    products = data;
     renderProducts(products);
     populateCategories(products);
   } catch (error) {
